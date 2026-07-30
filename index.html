@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Северная Каролина — Моя мечта</title>
+    <style>
+        /* Общие настройки страницы */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Шапка сайта */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* Основной контейнер */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Блок текста */
+        .about-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .about-section h2 {
+            color: #1e3c72;
+            margin-top: 0;
+        }
+
+        /* Сетка для трех картинок (ставим их в ряд) */
+        .gallery {
+            display: flex;
+            gap: 20px; /* Расстояние между картинками */
+            justify-content: space-between;
+            flex-wrap: wrap; /* Чтобы на телефонах картинки падали вниз */
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            width: 30%; /* Каждая картинка занимает примерно треть */
+            min-width: 250px;
+            flex-grow: 1;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover; /* Чтобы картинки не сжимались, а красиво кадрировались */
+        }
+
+        .card h3 {
+            font-size: 18px;
+            color: #2a5298;
+            margin: 15px 10px 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            padding: 0 15px;
+        }
+
+        /* Подвал сайта */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <h1>Северная Каролина</h1>
+        <p>Место, где хочется жить, творить и встречать рассветы</p>
+    </header>
+
+    <!-- Основной контент -->
+    <div class="container">
+
+        <!-- Текстовый блок -->
+        <div class="about-section">
+            <h2>Почему именно Северная Каролина?</h2>
+            <p>Этот штат привлекает своим невероятным разнообразием природы. Здесь можно всего за несколько часов доехать от величественных туманных гор Аппалачи до бескрайних песчаных пляжей Атлантического океана. Умеренный климат, развитые города и потрясающая экология делают это место идеальным для комфортной и спокойной жизни.</p>
+        </div>
+
+        <!-- Галерея из трех картинок с описанием -->
+        <div class="gallery">
+            <div class="card">
+                <img src="nc-mountains.jpg" alt="Горы Северной Каролины">
+                <h3>Величественные горы</h3>
+                <p>Знаменитые горы Блу-Ридж с их бесконечными лесами и захватывающими дух видами.</p>
+            </div>
+
+            <div class="card">
+                <img src="nc-beach.jpg" alt="Побережье Северной Каролины">
+                <h3>Океан и побережье</h3>
+                <p>Чистейшие пляжи Outer Banks, исторические маяки и шум океанских волн.</p>
+            </div>
+
+            <div class="card">
+                <img src="nc-city.jpg" alt="Города Северной Каролины">
+                <h3>Уютные города</h3>
+                <p>Современные, чистые и зеленые города с высоким уровнем жизни и дружелюбной атмосферой.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <p>Сайт создан в процессе обучения веб-разработке 🚀</p>
+    </footer>
+
+</body>
+</html>
